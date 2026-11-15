@@ -63,6 +63,7 @@ def create_research_plan(
     """
 
     try:
+        client = get_client()
         # Send request to the LLM
         response = client.responses.parse(
             model=MODEL,
